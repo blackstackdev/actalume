@@ -15,9 +15,10 @@
 
 ## Gate 3 — live deployment
 
-- Deploy the locked commit using `netlify.toml` or another approved static host.
-- Verify HTTP 200, app version, persistence, responsive layout and no console errors.
-- Verify native WebMCP discovery on the public origin in ChatGPT's in-app browser or supported Chrome.
+- Completed 2026-08-30 through GitHub Pages at `https://blackstackdev.github.io/actalume/`.
+- GitHub Actions builds the tested source on `main` and deploys the `dist` artifact with the `/actalume/` project base.
+- HTTP 200, version, branded assets, persistence, desktop/mobile layout and zero public-origin console warnings/errors were verified.
+- Supported Chrome with `WebMCP for testing` discovered all six native tools on the public origin; the same-origin verifier completed only `list_projects`, `inspect_project_contract` and `inspect_audit_history`.
 - Keep the URL free and accessible through judging.
 
 ## Gate 4 — video

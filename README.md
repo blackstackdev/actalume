@@ -16,6 +16,8 @@ Technical descriptor: **The evidence layer for agentic work.**
 
 Actalume was created during the 2026 WebMCP Challenge submission window. It becomes meaningfully better when a person and an agent use the same custody chain: the agent can inspect scope, propose bounded work, attach proof and request review; only a named human can decide what enters canonical history.
 
+**Live app:** [blackstackdev.github.io/actalume](https://blackstackdev.github.io/actalume/)
+
 ```mermaid
 flowchart LR
     C[Human contract] --> B[Bounded brick]
@@ -77,17 +79,19 @@ Current submission-preparation proof: 10/10 automated tests passed, the producti
 
 On 2026-08-27, Chrome 151 with `WebMCP for testing` enabled discovered and executed all six registered tools. Safe reads, evidence submission and a review request succeeded. An attempted agent approval was rejected, and canonical history remained unchanged.
 
+On 2026-08-30, the deployed GitHub Pages origin independently discovered all six tools and completed the three read-only calls in the [public native verifier](https://blackstackdev.github.io/actalume/native-verifier.html). The verifier is `noindex` and never invokes mutation or review-request tools.
+
 ![Six native WebMCP tools executed with human-only approval preserved](docs/media/native-six-tools-executed.png)
 
 The public source uses the imperative `document.modelContext.registerTool` surface in [`src/services/webmcp.ts`](src/services/webmcp.ts). The app remains functional in ordinary browsers and reports demo mode when native WebMCP is unavailable.
 
 ## Submission materials
 
-The submission dossier is under [`docs/submission`](docs/submission). Deployment, YouTube upload and Devpost submission remain separate external gates.
+The submission dossier is under [`docs/submission`](docs/submission). YouTube upload and Devpost submission remain separate external gates.
 
 ## Privacy and release state
 
-All seeded content is fictional. There are no accounts, analytics, network writes, publishing actions, or private project records. The v0.5.0 source is public at [`blackstackdev/actalume`](https://github.com/blackstackdev/actalume), but the product has not been deployed or submitted to the challenge.
+All seeded content is fictional. There are no accounts, analytics, network writes, publishing actions, or private project records. The v0.5.0 source is public at [`blackstackdev/actalume`](https://github.com/blackstackdev/actalume), and the static app is deployed through GitHub Pages. The project has not been submitted to the challenge.
 
 Product reasoning lives in [`docs/PRODUCT-BRIEF.md`](docs/PRODUCT-BRIEF.md), and the approved identity system is recorded in [`docs/BRAND.md`](docs/BRAND.md).
 

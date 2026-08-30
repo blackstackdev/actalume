@@ -9,6 +9,7 @@ Actalume was created during the WebMCP Challenge submission period. This log dis
 | 2026-08-27 | Added native registration coverage and completed Chrome 151 discovery/execution of all six tools. | `release/Actalume-0.4.0-NATIVE-WEBMCP-VERIFICATION.md` in the private evidence archive; public summary in `README.md` |
 | 2026-08-27 | Prepared the 310-word, eight-shot demo package with a 2:55 hard ceiling. | Private recording pack; public demo link added after upload |
 | 2026-08-30 | Raised the submission candidate to v0.5.0; reverified 10/10 tests, production build and zero vulnerabilities; corrected the approval gate to require deliberate name entry; anonymised all fictional fixture actors; prepared public repository, deployment and Devpost materials. | `docs/submission/`, current test/build output and source diff |
+| 2026-08-30 | Published the approved public source and deployed Actalume through GitHub Pages; corrected the project base and branded asset path; verified HTTP/assets, desktop/mobile UI, persistence, console cleanliness and six native WebMCP registrations on the live origin. | `https://github.com/blackstackdev/actalume`, `https://blackstackdev.github.io/actalume/`, GitHub Actions and `native-verifier.html` |
 
 ## Provenance note
 

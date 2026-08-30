@@ -1,6 +1,6 @@
 import type { LedgerState } from '../types';
 
-export const STORAGE_KEY = 'agent-work-ledger:v2';
+export const STORAGE_KEY = 'agent-work-ledger:v3';
 
 export const seedState: LedgerState = {
   contract: {
