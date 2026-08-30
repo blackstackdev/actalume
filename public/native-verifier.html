@@ -1,0 +1,66 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="robots" content="noindex, nofollow" />
+    <title>Actalume · Native WebMCP verification</title>
+    <style>
+      :root { color-scheme: dark; font-family: ui-monospace, Consolas, monospace; background: #050706; color: #f4f0e8; }
+      * { box-sizing: border-box; }
+      body { margin: 0; padding: 24px; background: radial-gradient(circle at 80% 0, #0c2222 0, #050706 42%); }
+      h1 { margin: 0 0 8px; font: 650 28px/1.1 system-ui, sans-serif; letter-spacing: .05em; }
+      .eyebrow { color: #69e1e5; letter-spacing: .14em; text-transform: uppercase; }
+      .status { display: inline-block; color: #69e1e5; border: 1px solid #29585a; padding: 8px 12px; }
+      .note { color: #9ba5a3; max-width: 72ch; line-height: 1.5; }
+      pre { min-height: 180px; white-space: pre-wrap; overflow-wrap: anywhere; border: 1px solid #293433; padding: 16px; background: #081010; line-height: 1.45; }
+      iframe { width: 100%; height: 420px; border: 1px solid #293433; background: #050706; }
+    </style>
+  </head>
+  <body>
+    <p class="eyebrow">Actalume · public evidence</p>
+    <h1>Native WebMCP verification</h1>
+    <p class="note">This same-origin verifier discovers the deployed tool surface and executes only three read-only inspection tools. It cannot approve work or alter canonical history.</p>
+    <p class="status" id="status">Waiting for the deployed app…</p>
+    <pre id="output">No result yet.</pre>
+    <iframe id="target" src="./" title="Deployed Actalume"></iframe>
+    <script>
+      const statusNode = document.querySelector('#status');
+      const outputNode = document.querySelector('#output');
+      const frame = document.querySelector('#target');
+
+      const normalize = (value) => {
+        if (typeof value !== 'string') return value;
+        try { return JSON.parse(value); } catch { return value; }
+      };
+
+      const execute = async (tools, name) => {
+        const tool = tools.find((candidate) => candidate.name === name);
+        if (!tool) return { missing: true };
+        return normalize(await document.modelContext.executeTool(tool, '{}'));
+      };
+
+      frame.addEventListener('load', async () => {
+        await new Promise((resolve) => setTimeout(resolve, 700));
+        try {
+          const tools = await document.modelContext.getTools();
+          const result = {
+            discovered: tools.map(({ name, origin }) => ({ name, origin })),
+            calls: {
+              list_projects: await execute(tools, 'list_projects'),
+              inspect_project_contract: await execute(tools, 'inspect_project_contract'),
+              inspect_audit_history: await execute(tools, 'inspect_audit_history')
+            }
+          };
+          outputNode.textContent = JSON.stringify(result, null, 2);
+          statusNode.textContent = `${tools.length} native tools discovered · three read-only calls complete`;
+          document.documentElement.dataset.verification = 'complete';
+        } catch (error) {
+          outputNode.textContent = JSON.stringify({ error: String(error) }, null, 2);
+          statusNode.textContent = 'Verification failed';
+          document.documentElement.dataset.verification = 'failed';
+        }
+      });
+    </script>
+  </body>
+</html>
