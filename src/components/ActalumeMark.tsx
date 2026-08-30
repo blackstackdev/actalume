@@ -4,5 +4,11 @@ interface ActalumeMarkProps {
 }
 
 export function ActalumeMark({ className, label = 'Actalume mark' }: ActalumeMarkProps) {
-  return <img className={className} src="/actalume-mark-illuminated.png" alt={label} />;
+  return (
+    <img
+      className={className}
+      src={`${import.meta.env.BASE_URL}actalume-mark-illuminated.png`}
+      alt={label}
+    />
+  );
 }
