@@ -83,11 +83,11 @@ The public source uses the imperative `document.modelContext.registerTool` surfa
 
 ## Submission materials
 
-The local submission dossier is under [`docs/submission`](docs/submission). Public repository, deployment, YouTube upload and Devpost submission remain separate external gates.
+The submission dossier is under [`docs/submission`](docs/submission). Deployment, YouTube upload and Devpost submission remain separate external gates.
 
 ## Privacy and release state
 
-All seeded content is fictional. There are no accounts, analytics, network writes, publishing actions, or private project records. This v0.5.0 submission candidate has local Git history but has not been registered, deployed, submitted or pushed to a public repository.
+All seeded content is fictional. There are no accounts, analytics, network writes, publishing actions, or private project records. The v0.5.0 source is public at [`blackstackdev/actalume`](https://github.com/blackstackdev/actalume), but the product has not been deployed or submitted to the challenge.
 
 Product reasoning lives in [`docs/PRODUCT-BRIEF.md`](docs/PRODUCT-BRIEF.md), and the approved identity system is recorded in [`docs/BRAND.md`](docs/BRAND.md).
 

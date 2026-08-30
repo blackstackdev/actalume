@@ -4,7 +4,7 @@ Checked: 2026-08-30
 
 ## Verdict
 
-**Ready with external gates.** The local product, MIT-licensed public-safe source, captioned demo and submission materials are ready for repository publication, deployment, video publication and Devpost entry. Those external actions have not occurred.
+**Ready with external gates.** The MIT-licensed public-safe source is published. The product, captioned demo and submission materials are ready for deployment, video publication and Devpost entry. Those later external actions have not occurred.
 
 ## Official deadline
 
@@ -53,11 +53,13 @@ Source:
 - Public attribution: `Actalume by Krēˈādiv Worx`.
 - Root licence: MIT, copyright 2026 Krēˈādiv Worx.
 - Local Git identity: Krēˈādiv Worx using the connected GitHub account's noreply address.
-- Local Git history exists on `main`; no origin or public repository exists.
+- Local and public Git history exist on `main`; the remote head matches the verified local commit.
+- Public repository: `https://github.com/blackstackdev/actalume`.
+- GitHub verification: public visibility, `main`, MIT detection, README/media rendering and exact local/remote head match passed.
 
 Reference SHA-256 digests:
 
-- `README.md`: `54770AAC35DA3A377461BC102ACDD7F3E61BD99201432C9EDBFA60997E45CB12`
+- `README.md`: `57F0E82E517ADE0924D4893AC0F651BB7EB7E7B8917ABDDCDD2391DC5080ED47`
 - `docs/media/actalume-desktop.png`: `91F4FD266BFDBC86A2EDACCB7C70D55F839589B658A86E3E09C27D33C71846CE`
 - `docs/media/native-six-tools-executed.png`: `DD2CB56DE174195406CD0A9E2B4061D915220D2D646A52BAE0158913510C8EE7`
 - `docs/submission/DEVPOST-COPY.md`: `963D9C9B73B7C1BE2FD8B009AB1A1482195EE865C961571B9118A25CB5E18488`
@@ -69,10 +71,9 @@ Actalume was created on 2026-08-26, after the submission window opened. It is no
 
 ## External gates remaining
 
-1. Create and publish the public source repository.
-2. Deploy the static app and verify native WebMCP on the public origin.
-3. Publish the inspected, captioned local demo to YouTube.
-4. Join the challenge and submit through Devpost.
-5. Preserve the live app, repository and video through judging.
+1. Deploy the static app and verify native WebMCP on the public origin.
+2. Publish the inspected, captioned local demo to YouTube.
+3. Join the challenge and submit through Devpost.
+4. Preserve the live app, repository and video through judging.
 
-No account, public repository, deployment, video upload or Devpost submission was created by this local preparation brick.
+The public repository was created only after explicit approval. No deployment, video upload or Devpost submission has occurred.

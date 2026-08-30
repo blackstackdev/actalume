@@ -8,10 +8,10 @@
 
 ## Gate 2 — public repository
 
-- Initialise Git without importing local `memory/`, `release/`, `docs/design/` or `design-qa.md`.
-- Confirm `git status` contains only the public manifest.
-- Preserve the approved brand name and GitHub noreply commit identity.
-- Create the public repository and ensure the licence is visible in the repository About panel.
+- Completed 2026-08-30 at `https://github.com/blackstackdev/actalume`.
+- Public tree excludes local `memory/`, `release/`, `docs/design/` and `design-qa.md`.
+- Git history uses the approved brand name and GitHub noreply identity.
+- GitHub detects the root MIT licence and renders the README and public evidence images.
 
 ## Gate 3 — live deployment
 
