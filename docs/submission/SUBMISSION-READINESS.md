@@ -1,10 +1,10 @@
 # Actalume WebMCP Challenge submission readiness
 
-Checked: 2026-08-30
+Checked: 2026-08-31
 
 ## Verdict
 
-**Live and ready for the remaining external gates.** The MIT-licensed public-safe source and GitHub Pages app are published. The captioned demo and submission materials are ready for YouTube publication and Devpost entry. Those two later external actions have not occurred.
+**Submitted and publicly verified.** The MIT-licensed public-safe source, GitHub Pages app, captioned YouTube demo and Devpost entry are live. The approved `@skillissue_md` reveal also links the public demo and entry. The remaining obligation is to preserve judge access and correct only factual, access or material-security problems during judging.
 
 ## Official deadline
 
@@ -60,9 +60,15 @@ Source:
 - GitHub Pages verification: HTTP 200, correct `/actalume/` asset base, branded mark, desktop/mobile layouts, local persistence and zero public-origin console warnings/errors passed.
 - Public-origin native verification: all six tools were discovered in supported Chrome with `WebMCP for testing`; the `noindex` verifier completed three read-only calls and invoked no mutation or review-request tools.
 
+## External publication verification — 2026-08-31
+
+- Public demo: `https://youtu.be/W7TDj8BiLsw`.
+- Devpost entry: `https://devpost.com/software/actalume`; the submission and approved 1200×800 thumbnail were visually verified.
+- Public reveal: `https://x.com/skillissue_md/status/2094321034413441113`; X confirmed the post and displayed the correct text, embedded two-minute demo and Devpost link.
+
 Reference SHA-256 digests:
 
-- `README.md`: `A3FAF8D4A7496D07866DC4C9A899827300481147418508A432060F733F35AC8F`
+- `README.md`: `283CC3F96908C6E2289512530E5DE541CF64D8D91417601C48A6F145F9782418`
 - `docs/media/actalume-desktop.png`: `91F4FD266BFDBC86A2EDACCB7C70D55F839589B658A86E3E09C27D33C71846CE`
 - `docs/media/native-six-tools-executed.png`: `DD2CB56DE174195406CD0A9E2B4061D915220D2D646A52BAE0158913510C8EE7`
 - `docs/submission/DEVPOST-COPY.md`: `963D9C9B73B7C1BE2FD8B009AB1A1482195EE865C961571B9118A25CB5E18488`
@@ -72,10 +78,10 @@ Reference SHA-256 digests:
 
 Actalume was created on 2026-08-26, after the submission window opened. It is not a pre-existing product retrofitted after the fact. Its WebMCP surface, governance tests, native verification, responsive product experience and demo package were all produced during the challenge window.
 
-## External gates remaining
+## Judging-preservation obligations
 
-1. Publish the inspected, captioned local demo to YouTube.
-2. Join the challenge and submit through Devpost.
-3. Preserve the live app, repository and video through judging.
+1. Preserve the live app, repository, public video and Devpost entry through judging.
+2. Correct only factual errors, broken judge access or material security problems.
+3. Keep feature expansion outside the submitted judging build.
 
-The public repository and GitHub Pages deployment were created only after explicit approval. No video upload or Devpost submission has occurred.
+The public repository, GitHub Pages deployment, YouTube upload, Devpost submission and X reveal each occurred only after explicit approval and were verified at their public URLs.

@@ -73,7 +73,7 @@ npm run build
 npm audit
 ```
 
-Current submission-preparation proof: 10/10 automated tests passed, the production build succeeded and `npm audit` reported zero vulnerabilities on 2026-08-30.
+Current verified release proof: 10/10 automated tests passed, the production build succeeded and `npm audit` reported zero vulnerabilities on 2026-08-30.
 
 ## Native WebMCP proof
 
@@ -87,11 +87,11 @@ The public source uses the imperative `document.modelContext.registerTool` surfa
 
 ## Submission materials
 
-The submission dossier is under [`docs/submission`](docs/submission). The public two-minute demo is available on [YouTube](https://youtu.be/W7TDj8BiLsw). Devpost submission remains a separate external gate.
+The submission dossier is under [`docs/submission`](docs/submission). The public two-minute demo is available on [YouTube](https://youtu.be/W7TDj8BiLsw), and the submitted WebMCP Challenge entry is public on [Devpost](https://devpost.com/software/actalume).
 
 ## Privacy and release state
 
-All seeded content is fictional. There are no product accounts, analytics, application network writes, or private project records. The v0.5.0 source is public at [`blackstackdev/actalume`](https://github.com/blackstackdev/actalume), the static app is deployed through GitHub Pages, and the captioned demo is public on [YouTube](https://youtu.be/W7TDj8BiLsw). The project has not been submitted to the challenge.
+All seeded content is fictional. There are no product accounts, analytics, application network writes, or private project records. The v0.5.0 source is public at [`blackstackdev/actalume`](https://github.com/blackstackdev/actalume), the static app is deployed through GitHub Pages, the captioned demo is public on [YouTube](https://youtu.be/W7TDj8BiLsw), and the project is submitted to the [WebMCP Challenge on Devpost](https://devpost.com/software/actalume). The public reveal and demo are also available from [`@skillissue_md` on X](https://x.com/skillissue_md/status/2094321034413441113).
 
 Product reasoning lives in [`docs/PRODUCT-BRIEF.md`](docs/PRODUCT-BRIEF.md), and the approved identity system is recorded in [`docs/BRAND.md`](docs/BRAND.md).
 
